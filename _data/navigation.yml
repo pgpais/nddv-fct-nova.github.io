@@ -1,6 +1,0 @@
-- name: Sobre nós
-  home_relative: '#about'
-  link: /about
-- name: Contactos
-  home_relative: '#contacts'
-  link: /about#contacts
