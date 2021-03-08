@@ -1,0 +1,21 @@
+---
+layout: generic
+---
+<section class="major">
+    <h1>{{ page.name }}</h1>
+    <p>{{page.course}} - Membro desde {{ page.since }}</p>
+</section>
+<section>
+    <div>
+        {% if page.picture %}
+        <span class="image left"><img src="{{page.picture}}"></span>
+        {% endif %}
+        {{content}}
+    </div>
+</section>
+<section id="contacts" class="wrapper style1 fade-up">
+    <div class="inner">
+        <h2>Contactos</h2>
+        {%include contacts.html contacts = page.contacts %}
+    </div>
+</section>
